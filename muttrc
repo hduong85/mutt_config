@@ -56,6 +56,8 @@ unset markers # In the pager, don't display + at the beginning of wrapped lines;
 #set timeout = 5
 #set mail_check = 0
 
+set query_command = "~/.mutt/mail_filter.sh %s"
+
 ####################
 # SIDEBAR SETTINGS #
 ####################
