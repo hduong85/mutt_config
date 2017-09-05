@@ -119,3 +119,6 @@ macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "Ma
 
 # Toggle starred mail
 folder-hook '+[Gmail]/Starred' bind index,pager \Cy flag-message
+
+bind editor <Tab> complete-query
+bind editor ^T complete
