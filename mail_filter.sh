@@ -1,4 +1,8 @@
 #!/bin/bash
-cat ~/.mutt/cache/bodies/imaps\:hduong@apm.com@imap.gmail.com/INBOX/* |\
-grep --regex "<$1.*@.*>" |\
-perl -pe "s|.*<$1([^@]*?)@(.*?)>.*|$1\1@\2|g"
+INBOX="$HOME/.mutt/cache/bodies/imaps:hduong@apm.com@imap.gmail.com/INBOX/*"
+
+# Dummy print
+echo ""
+
+# Real output
+cat $INBOX | sed -n "s/^.*[<\"]\($1[^<\/\ :]*@[^>\/\ ]*\)[>\"].*$/\1/p" | sort -u
