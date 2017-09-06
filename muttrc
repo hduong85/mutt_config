@@ -60,6 +60,8 @@ unset markers # In the pager, don't display + at the beginning of wrapped lines;
 set query_command = '~/.mutt/mail_filter.sh %s'
 set mailcap_path = '~/.mutt/mailcap'
 
+set new_mail_command = "notify-send -i /home/hduong/mutt_config/mutt.png -u critical 'New Email' '%n new messages, %u unread.' &"
+
 ####################
 # SIDEBAR SETTINGS #
 ####################
