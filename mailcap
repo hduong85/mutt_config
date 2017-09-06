@@ -1,0 +1,17 @@
+# .pdf
+application/pdf; ~/mutt_config/mutt_bgrun.sh evince %s; copiousoutput
+
+# .doc/.docx
+application/msword; ~/mutt_config/mutt_bgrun.sh wps %s; copiousoutput
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; ~/mutt_config/mutt_bgrun.sh wps %s; copiousoutput
+
+# .xls/.xlsx
+application/vnd.ms-excel; ~/mutt_config/mutt_bgrun.sh et %s; copiousoutput
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; ~/mutt_config/mutt_bgrun.sh et %s;copiousoutput
+
+# .ppt/.pptx
+application/vnd.ms-powerpoint; ~/mutt_config/mutt_bgrun.sh wpp %s; copiousoutput
+application/vnd.openxmlformats-officedocument.presentationml.presentation; ~/mutt_config/mutt_bgrun.sh wpp %s;copiousoutput
+
+# Images
+image/*;  ~/mutt_config/mutt_bgrun.sh xviewer %s; copiousoutput
