@@ -123,3 +123,7 @@ bind index,pager S flag-message
 
 bind editor <Tab> complete-query
 bind editor ^T complete
+
+# Toggle thread collapse
+bind index - collapse-thread
+bind index _ collapse-all
