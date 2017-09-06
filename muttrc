@@ -118,8 +118,8 @@ bind index G last-entry
 # Ctrl-R to mark all as read
 macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "Mark all messages as read"
 
-# Toggle starred mail
-folder-hook '+[Gmail]/Starred' bind index,pager \Cy flag-message
+# Star a message
+bind index,pager S flag-message
 
 bind editor <Tab> complete-query
 bind editor ^T complete
