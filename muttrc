@@ -54,7 +54,7 @@ set menu_scroll # scroll in menus
 set tilde # show tildes like in vim
 unset markers # In the pager, don't display + at the beginning of wrapped lines; it's distracting
 
-#set timeout = 5
+set timeout = 30
 #set mail_check = 0
 
 set query_command = '~/.mutt/mail_filter.sh %s'
